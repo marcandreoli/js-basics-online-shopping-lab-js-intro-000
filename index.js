@@ -27,6 +27,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
   } else {
     var array = [];
+<<<<<<< HEAD
     var arrayB = [];
     var a = cart.length;
     for(let i=0; i<cart.length-1; i++) {
@@ -36,6 +37,14 @@ function viewCart() {
       arrayB.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     return `In your cart, you have${array}, and${arrayB}.`;
+=======
+    var cartLength = cart.length;
+    for(let i=0; i<cart.length; i++) {
+      array.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
+    }
+    return `In your cart, you have${array}`;
+
+>>>>>>> c1a110a1beacc2165b1c795587eabdbb545d9116
   }
 }
 
